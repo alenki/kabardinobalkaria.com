@@ -2,298 +2,100 @@
 kabardinobalkaria.com website
 
 
-# Kabardino-Balkaria Website — Build Prompt
+## Context
+I am a web developer from a region in Russia called Kabardino-Balkaria. I have access to the domain kabardinobalkaria.com and I want to do something interesting in it that will monetize me and my instagram and help me get more known and respected.
 
-## Project Overview
 
-Build a single-page website for **kabardinobalkaria.com** — a digital showcase of the Kabardino-Balkaria region in the Russian Caucasus. The site should feel like looking through a window into a dream: soft, light, flowing, nature-focused. It exists to make visitors *feel* the region and want to explore it.
+## "Built in Kabardino-Balkaria" Portfolio Showcase
+I want to position myself as THE web developer from the region. The site becomes my portfolio with a strong regional identity.
 
-**Tech stack:** React with Tailwind CSS. Single page, responsive, deployable as a static site.
 
----
+## Site Structure
+### Homepage
+Bold hero with Caucasus imagery + my tagline (something like "Web Developer from the Heart of the Caucasus")
+Brief intro connecting my location to your work ethic/perspective
+Featured projects
 
-## Design Philosophy
+### Portfolio/Work
+Case studies with visuals, not just screenshots
+Show my process, not just results
 
-### Core Feeling
-- **Light over dark** — morning sunlight, openness, air
-- **Flow over grid** — water doesn't move in boxes
-- **Breath and space** — generous margins, room to rest
-- **Photography as hero** — landscapes speak for themselves
-- **Soft interactions** — nothing jarring, everything gentle like a breeze
-- **Timeless typography** — elegant serif for headlines, feels like a beautiful travel journal
+### Discover Kabardino-Balkaria
+5-10 curated spots with my own photos/descriptions
+This section makes the site shareable and gives me Instagram content
 
-### What to Avoid
-- Dark themes
-- Sharp corners
-- Aggressive animations
-- Tech/startup aesthetics
-- Portfolio or business-focused design
-- Generic tourist website look
+### Contact/Hire
+Clean, straightforward
 
----
 
-## Color Palette
+## Curated Spots for KabardinoBalkaria.com
+1. Mount Elbrus
+Tagline: Europe's highest point. My backyard.
+At 5,642 meters, Elbrus is a dormant volcano with twin peaks that dominate the Caucasus skyline. Most people think you need to be a mountaineer to experience it — you don't. A cable car takes you to Gara-Bashi station at 3,847 meters, where you're standing above the clouds with glaciers stretching in every direction.
+The weather changes fast up here. One moment you're in blinding sun; the next, fog swallows everything. That unpredictability is part of the appeal.
+Best time: Year-round. Winter for skiing, summer for hiking and views.
+Access: Cable car from Polyana Azau. Bring layers even in July.
 
-| Name | Hex | Use |
-|------|-----|-----|
-| Warm Cream | #FAF8F5 | Main background |
-| Soft Teal | #7FB3C4 | Primary accent (links, highlights) |
-| Sage Green | #A8B5A0 | Secondary accent |
-| Warm Stone | #C4B6A6 | Tertiary |
-| Deep Forest | #2D3B2D | Body text |
-| Stone Gray | #78716c | Secondary text |
-| White | #FFFFFF | Cards, overlays |
+2. Chegem Waterfalls & Gorge
+Tagline: The gorge that keeps going.
+Chegem starts with waterfalls cascading directly from the cliff face — impressive, but just the opening act. The gorge narrows to 20 meters wide with 250-meter walls blocking out the sun. Keep driving on the dirt road and it opens into Upper Chegem: wide, sunlit, with eagles circling overhead and paragliders launching from the ridges.
+At the base, local women sell handwoven wool products. There's a 222-step climb called the "Ladder of Happiness" to a cafe at the top. In winter, the waterfalls freeze into massive ice formations — some locals say they're more beautiful frozen than flowing.
+Best time: Year-round — completely different character each season.
+Access: 55km from Nalchik. Paved road to the waterfalls, dirt beyond.
 
-Each location card should have a subtle unique background tint (provided in content below).
+3. Gedmishkh Falls ("Avatar Falls")
+Tagline: 70 jets of water from a 100-meter cliff. Unreal.
+Also called "Tsar's Crown" or "Waterfall of 70 Jets," Gedmishkh looks like it was designed for a film set. A spring emerges directly from the rock face at 100 meters and splits into dozens of streams that fan out across the cliff. The comparison to Avatar's Pandora isn't an exaggeration.
+Locals believe the water has healing properties. Whether or not that's true, standing beneath it feels like something — the negative ions, maybe, or just the scale of it.
+Best time: Summer for the full effect. Winter transforms it into an ice sculpture.
+Access: 60km from Nalchik. The final stretch requires some hiking.
 
----
+4. Blue Lake (Tserik-Kel)
+Tagline: Russia's deepest mystery.
+No one has reached the bottom. At 279+ meters recorded depth, this karst lake is one of the deepest in the world — and one of the strangest. No fish live here. The water temperature never changes, summer or winter. The color is an unnatural turquoise that looks photoshopped but isn't.
+Jacques Cousteau himself tried to unravel its secrets. Diving expeditions still come here, pushing deeper each time. Locals historically avoided the lake. Now it draws the curious — but it still feels like a place holding something back.
+Best time: Year-round. The color is consistent.
+Access: Right off the main road in Cherek Valley. Easy to reach.
 
-## Typography
+5. Tyzyl Gorge
+Tagline: The gorge almost no one knows exists.
+This is arguably the least-visited place in Kabardino-Balkaria, and it looks like a location from Jurassic Park. Flowering meadows, waterfalls (including Tyzyl-Su, the largest in the area), caves with actual fossils embedded in the walls. The landscape feels prehistoric — the kind of place where you half-expect something ancient to emerge from behind the rocks.
+Local legends claim Bigfoot lives here. There are enough hidden grottoes and unexplored corners that you can't entirely dismiss it.
+Best time: Summer, when the meadows are in bloom.
+Access: Requires a jeep. The roads are rough, which is why it stays empty.
 
-- **Headlines:** Google Font "Cormorant Garamond" (weight 500) — elegant, timeless serif
-- **Body:** System sans-serif stack (-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif)
-- **Characteristics:** Light font weights, generous line-height (1.7 for body), tight letter-spacing on headlines
+6. El-Tyubyu Village & City of the Dead
+Tagline: Where Balkarian history began.
+El-Tyubyu is the spiritual and historical heart of Balkaria. The village sits in the Chegem Gorge surrounded by ancient watchtowers, defensive walls, and medieval mausoleums where nobility were buried from the 8th to 18th centuries.
+The most striking structure is the Balkarukov Tower, called the "Tower of Love." Legend says Akhtugan Balkarukov built it to defend against the relatives of Kerime — a woman he kidnapped from Dagestan. Nearby, ancient Greek stairs are carved directly into the cliff face, leading to defensive positions 30 meters up.
+It's one of the few places where you can physically touch centuries of Caucasian history.
+Best time: Year-round. Golden hour is exceptional here.
+Access: Continue past Chegem Waterfalls. Guesthouses available for overnight stays.
 
----
+7. Bezengi Wall & Camp
+Tagline: The "Small Himalayas" of Russia.
+Bezengi is where serious mountaineers come. The wall itself is 13 kilometers of continuous ice and stone, with five peaks above 5,000 meters clustered together — the highest concentration in the Caucasus. Soviet climbers nicknamed it the "Small Himalayas" because of its difficulty.
+At the base sits Bezengi Camp, a mountaineers' village that's been operating since the USSR. It has a bathhouse, cafes, gear shops, and a kindergarten for climbing families. The vibe is utilitarian and focused — people come here to summit, not to relax.
+Best time: Summer for access. Winter is for expeditions only.
+Access: Requires transfer vehicle and a border zone permit (it's near Georgia). Plan ahead.
 
-## Layout & Components
+8. Upper Balkaria
+Tagline: A village that refused to disappear.
+Upper Balkaria feels like it's hiding from the modern world — and in a sense, it is. After the Balkars were deported to Central Asia in 1944, the village was abandoned. When they returned in 1957, they rebuilt around the ancient ruins: defensive towers, stone crypts, the remnants of traditional auls.
+Walking through Upper Balkaria is walking through layers of history — medieval architecture next to Soviet-era reconstruction next to contemporary village life. The Cherek River runs through it all, indifferent to the centuries.
+Best time: Year-round, though spring and autumn have the best light.
+Access: Paved road from Nalchik. Combine with Blue Lake on the same trip.
 
-### 1. Navigation (Fixed, Minimal)
-- Left: Site name "Kabardino-Balkaria" in Cormorant Garamond
-- Right: "Discover" | "About" links (hidden on mobile) + Instagram CTA with icon
-- Transparent background, becomes slightly blurred white on scroll
-- No hamburger menu needed — keep it simple
+9. Aushiger Hot Springs
+Tagline: Mineral water, straight from the earth.
+Therapeutic hot springs aren't unique to Kabardino-Balkaria, but Aushiger's setting is. The mineral water surfaces naturally and forms a warm lake at the foot of the mountains. Locals have used it for healing for generations — the mineral content is genuinely medicinal, not just marketing.
+After days in the mountains, this is where you recover. The steam rising off the water against the Caucasus backdrop is worth the trip alone.
+Best time: Year-round. Cold months are especially atmospheric.
+Access: Near Upper Balkaria in the Cherek Valley. Easy detour.
 
-### 2. Hero Section (Full viewport height)
-- Full-screen background image with subtle parallax on scroll
-- Soft gradient overlay (white/transparent, fading to background color at bottom)
-- Optional: Floating particles animation (subtle, like pollen or light dust)
-- Content centered:
-  - Small caps text: "The Heart of the Caucasus"
-  - Large headline: "Kabardino-Balkaria" (Cormorant Garamond, very large)
-  - Subline: "Where Europe's highest peaks meet ancient villages, glacial lakes hold their secrets, and time moves to the rhythm of mountain rivers."
-  - CTA button: "Begin exploring" with down arrow, rounded-full, soft white background with backdrop blur
-
-### 3. Introduction Section
-- Max-width ~800px, centered
-- Single paragraph, larger text (xl or 2xl), light weight:
-  "A republic in southern Russia that most people have never heard of. Home to Mount Elbrus, bottomless blue lakes, waterfalls that emerge straight from cliff faces, and villages that have stood for a thousand years."
-- Below: Small stats row with dots between: "6 peaks above 5,000m · Population 870,000 · Established 1922"
-
-### 4. Discover Section (Main Content)
-- Section header:
-  - Small teal uppercase label: "Discover"
-  - Large headline: "Ten places that will stay with you"
-  - Short description paragraph
-- Grid of 10 location cards (responsive: 1 col mobile, 2 col tablet, 3 col desktop)
-- Gap: 24-32px
-
-#### Location Card Design
-- Rounded-2xl corners
-- Subtle shadow, increases on hover
-- Each card has unique soft background color (provided in content)
-- Structure:
-  - Image container (aspect-ratio 4/5) with image that scales slightly on hover
-  - Soft gradient overlay from bottom (white/transparent)
-  - Content area below image on colored background:
-    - Local name in italics if exists (e.g., "Tserik-Kel")
-    - Location name (Cormorant Garamond, xl size)
-    - Subtitle/tagline
-    - Small stats: elevation + season
-- On hover: subtle bottom border line appears (teal, gradient fade on edges)
-- Clicking card opens modal
-
-#### Location Modal
-- Centered overlay with backdrop blur and dark transparent background
-- White modal with rounded-3xl corners
-- Close button (X) top right, rounded-full
-- Image header (h-64 to h-80)
-- Content on location's unique background color:
-  - Local name (if exists)
-  - Large name headline
-  - Italic subtitle
-  - Full description paragraph
-  - Stats row: Elevation, Best Season
-- Smooth entrance animation (fade + scale + slight translateY)
-
-### 5. Quote Interlude Section
-- Full-width, generous vertical padding (py-32)
-- Background: Soft landscape image, fixed position, low opacity (20%)
-- Centered content:
-  - Large quotation mark icon (teal, low opacity)
-  - Quote in Cormorant Garamond italic, large size (3xl-4xl):
-    "The nature here is more rigid and serious than in neighboring regions. Like a face that was smiling — and then suddenly became thoughtful."
-  - Attribution: "— Artyem Babaritsky, local guide"
-
-### 6. About Section
-- Two-column layout (stacks on mobile)
-- Left: Image with rounded corners, aspect-ratio 4/5. Optional: small floating accent image offset bottom-right
-- Right:
-  - Small teal label: "About this place"
-  - Headline: "A region that rewards the curious"
-  - 3 paragraphs of history/context (provided below)
-  - Info grid (2x2): Capital, Getting there, Best season, Languages
-
-### 7. Follow Section (Instagram CTA)
-- Centered, simple
-- Headline: "Follow the journey"
-- Short text: "I share new places, stories, and the everyday beauty of this region on Instagram."
-- Button: Dark rounded-full with Instagram icon + "@your_handle"
-
-### 8. Footer
-- Simple, single row (stacks on mobile)
-- Left: Site name
-- Center: Contact link, Instagram link
-- Right: "Made with love from the Caucasus"
-- Top border, light stone color
-
----
-
-## Content for the 10 Locations
-
-### 1. Mount Elbrus
-- **Subtitle:** "Europe's Highest Peak"
-- **Elevation:** 5,642m
-- **Season:** Year-round
-- **Card color:** #E8F4F8
-- **Description:** "Twin summits of a sleeping volcano, crowned with eternal ice. At sunrise, the snow turns pink and gold. A cable car lifts you above the clouds to 3,847 meters, where the world becomes very quiet."
-- **Image:** Mountain/snow peak landscape
-
-### 2. Chegem Gorge
-- **Subtitle:** "Where Water Becomes Light"
-- **Elevation:** 1,200m
-- **Season:** Year-round
-- **Card color:** #F0F5E9
-- **Description:** "Waterfalls pour directly from the cliff face, catching sunlight as they fall. The gorge narrows until the walls nearly touch — 250 meters of stone with only sky above. In winter, the falls freeze into cathedrals of ice."
-- **Image:** Gorge/waterfall landscape
-
-### 3. Blue Lake
-- **Local name:** Tserik-Kel
-- **Subtitle:** "The Bottomless Mystery"
-- **Elevation:** 809m
-- **Season:** Year-round
-- **Card color:** #E5EEF3
-- **Description:** "No one has reached the bottom. Over 279 meters deep, no fish, constant temperature year-round. The water is so clear it seems lit from within. Jacques Cousteau came here searching for answers. The lake kept its secrets."
-- **Image:** Clear blue lake
-
-### 4. Gedmishkh Falls
-- **Local name:** Avatar Falls
-- **Subtitle:** "The Crown of Water"
-- **Elevation:** 1,400m
-- **Season:** Year-round
-- **Card color:** #F5F0E8
-- **Description:** "Seventy jets of water emerge from the rock at a hundred meters, fanning out like a crown. The mist catches rainbows. Locals say the water heals. It certainly makes you stop and remember what wonder feels like."
-- **Image:** Multi-stream waterfall
-
-### 5. El-Tyubyu
-- **Local name:** City of the Dead
-- **Subtitle:** "The City of Silence"
-- **Elevation:** 1,100m
-- **Season:** Year-round
-- **Card color:** #EDE8E3
-- **Description:** "Ancient watchtowers still stand guard over the valley. Medieval mausoleums hold eight centuries of nobility. Greek stairs carved into cliff faces lead to lookouts abandoned long ago. The village remembers everything."
-- **Image:** Ancient towers/village
-
-### 6. Tyzyl Gorge
-- **Subtitle:** "The Forgotten Valley"
-- **Elevation:** 1,600m
-- **Season:** Summer
-- **Card color:** #E9F0E5
-- **Description:** "The least-visited corner of the republic. Flowering meadows give way to caves holding fossils from when this was an ancient seabed. The landscapes feel prehistoric — as if something might emerge from behind the rocks at any moment."
-- **Image:** Green valley/meadow
-
-### 7. Bezengi Wall
-- **Subtitle:** "The Russian Himalayas"
-- **Elevation:** 5,000m+
-- **Season:** Summer
-- **Card color:** #F2F5F8
-- **Description:** "Thirteen kilometers of unbroken ice and stone. Five summits above 5,000 meters. Soviet mountaineers trained here for the real Himalayas. At its foot, a village of climbers with a bathhouse, a kindergarten, and a view that never gets ordinary."
-- **Image:** Dramatic mountain wall
-
-### 8. Upper Balkaria
-- **Subtitle:** "The Village That Returned"
-- **Elevation:** 1,050m
-- **Season:** Year-round
-- **Card color:** #F0EBE5
-- **Description:** "In 1944, the entire population was deported. In 1957, they came back and rebuilt around the ruins of their ancestors. Defensive towers stand next to vegetable gardens. The Cherek River flows past, indifferent to centuries."
-- **Image:** Mountain village
-
-### 9. Aushiger Springs
-- **Subtitle:** "Where Earth Breathes Warm"
-- **Elevation:** 520m
-- **Season:** Year-round
-- **Card color:** #E8EDE5
-- **Description:** "Mineral water rises from deep in the earth, forming pools that steam against the mountain air. The water is genuinely therapeutic — not a marketing claim but a reason people have come here for generations."
-- **Image:** Hot springs/steam
-
-### 10. Nalchik
-- **Subtitle:** "The Gentle Capital"
-- **Elevation:** 512m
-- **Season:** Year-round
-- **Card color:** #F5F2EE
-- **Description:** "A small city in the foothills built around parks and mineral springs. Soviet sanatoriums where Russians once came to heal. Wide boulevards lined with trees. The place you return to after the mountains, where ordinary life continues."
-- **Image:** City park/trees
-
----
-
-## About Section Content
-
-**Paragraph 1:**
-"Kabardino-Balkaria sits in the central Caucasus, bordered by Georgia to the south. Two peoples — the Kabardins (Circassian) and the Balkars (Turkic) — have shared this land for centuries, each with their own language, traditions, and relationship to these mountains."
-
-**Paragraph 2:**
-"The Balkars were deported to Central Asia in 1944, accused of Nazi collaboration. They returned in 1957 to rebuild their villages around the ancient towers their ancestors had left behind. That history is visible everywhere if you know where to look."
-
-**Paragraph 3:**
-"Today, the republic draws mountaineers, seekers of hot springs, and a growing number of people who simply want to see something they've never seen before."
-
-**Info grid:**
-- Capital: Nalchik
-- Getting there: Flights via Moscow
-- Best season: May – October
-- Languages: Russian, Kabardian, Balkar
-
----
-
-## Animations & Interactions
-
-- **Page load:** Gentle fade-in-up for hero content (staggered)
-- **Scroll:** Cards fade/slide in as they enter viewport
-- **Hero parallax:** Background image moves slower than scroll (subtle, ~0.3 ratio)
-- **Card hover:** Image scales slightly (1.05), shadow increases, bottom accent line appears
-- **Modal:** Fades in with slight scale-up and translateY
-- **All transitions:** Slow and smooth (300-500ms), ease-out timing
-- **Optional:** Floating particles in hero (very subtle, low count, slow movement)
-
----
-
-## Responsive Behavior
-
-- **Mobile:** Single column, stacked layout, smaller text sizes, navigation links hidden (just logo + Instagram)
-- **Tablet:** 2-column grid for cards
-- **Desktop:** 3-column grid for cards, side-by-side layouts for About section
-
----
-
-## Placeholder Images
-
-Use Unsplash URLs for now (user will replace with their own photos):
-- Hero: `https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80`
-- Locations: Use varied mountain/nature landscapes from Unsplash
-- About section: `https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=80`
-
----
-
-## Final Notes
-
-- The site should feel peaceful to browse — no urgency, no aggressive CTAs
-- White space is a feature, not wasted space
-- Every text element should be carefully considered — this is more poetry than marketing
-- The Instagram handle placeholder is `@your_handle` — user will replace
-- Email placeholder: `hello@kabardinobalkaria.com`
-- No portfolio, no services, no "hire me" — this is purely a regional showcase
-- Smooth scroll behavior enabled globally
-
----
-
-Build this as a single React component file using Tailwind CSS. Make it beautiful.
+10. Nalchik
+Tagline: Home base.
+Nalchik doesn't try to be dramatic — it's a small, calm city in the foothills, originally built as a Soviet resort town. The main park (Atajukinsky Garden) still has that era's energy: wide paths, mineral springs, sanatoriums where Russians came to "take the waters."
+The pedestrian "Arbat" street is good for people-watching. The central market is good for food. It's not the destination — it's where you return to after the mountains, where you plan the next trip over coffee, where regular life happens between adventures.
+Best time: Year-round.
+Access: Flights from Moscow, trains from various cities. The starting point for everything else.

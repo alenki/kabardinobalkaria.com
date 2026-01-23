@@ -1,12 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
-    <linearGradient id="mountain" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#A8B5A0"/>
-      <stop offset="100%" style="stop-color:#7FB3C4"/>
+    <linearGradient id="mountainGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1d23"/>
+      <stop offset="100%" style="stop-color:#4a7c8c"/>
     </linearGradient>
   </defs>
-  <rect width="100" height="100" fill="#FAF8F5" rx="20"/>
-  <path d="M15 75 L50 25 L85 75 Z" fill="url(#mountain)" opacity="0.9"/>
-  <path d="M30 75 L50 45 L70 75 Z" fill="#2D3B2D" opacity="0.3"/>
-  <circle cx="75" cy="30" r="8" fill="#7FB3C4" opacity="0.6"/>
+  <!-- Mountain peaks representing Elbrus -->
+  <polygon points="50,15 20,85 40,85 50,55 60,85 80,85" fill="url(#mountainGrad)"/>
+  <!-- Snow cap -->
+  <polygon points="50,15 42,35 50,28 58,35" fill="#f8f6f1"/>
+  <!-- Gold accent sun -->
+  <circle cx="75" cy="25" r="8" fill="#c9a227"/>
 </svg>
