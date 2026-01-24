@@ -31,9 +31,6 @@ export function Header() {
             <a href="#/" data-nav-link class="nav-link font-mono text-xs tracking-[0.15em] uppercase">
               Главная
             </a>
-            <a href="#/portfolio" data-nav-link class="nav-link font-mono text-xs tracking-[0.15em] uppercase">
-              Работы
-            </a>
             <a href="#/discover" data-nav-link class="nav-link font-mono text-xs tracking-[0.15em] uppercase">
               Открыть КБР
             </a>
@@ -64,16 +61,12 @@ export function Header() {
               <span class="font-mono text-xs text-copper-500">01</span>
               <span class="font-display text-3xl text-stone-100 group-hover:text-copper-400 transition-colors">Главная</span>
             </a>
-            <a href="#/portfolio" data-nav-link class="mobile-nav-link group flex items-center gap-4">
-              <span class="font-mono text-xs text-copper-500">02</span>
-              <span class="font-display text-3xl text-stone-100 group-hover:text-copper-400 transition-colors">Работы</span>
-            </a>
             <a href="#/discover" data-nav-link class="mobile-nav-link group flex items-center gap-4">
-              <span class="font-mono text-xs text-copper-500">03</span>
+              <span class="font-mono text-xs text-copper-500">02</span>
               <span class="font-display text-3xl text-stone-100 group-hover:text-copper-400 transition-colors">Открыть КБР</span>
             </a>
             <a href="#/contact" data-nav-link class="mobile-nav-link group flex items-center gap-4">
-              <span class="font-mono text-xs text-copper-500">04</span>
+              <span class="font-mono text-xs text-copper-500">03</span>
               <span class="font-display text-3xl text-stone-100 group-hover:text-copper-400 transition-colors">Контакты</span>
             </a>
           </nav>

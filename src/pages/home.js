@@ -39,13 +39,13 @@ export function HomePage() {
             <!-- Label -->
             <div class="animate-on-load animate-fade-in-up mb-6">
               <span class="font-mono text-[0.65rem] tracking-[0.25em] text-copper-500 uppercase">
-                Веб-разработчик
+                Кабардино-Балкария
               </span>
             </div>
 
             <!-- Main heading -->
             <h1 class="animate-on-load animate-fade-in-up delay-100">
-              <span class="display-xl text-stone-100 block">Из сердца</span>
+              <span class="display-xl text-stone-100 block">В сердце</span>
               <span class="display-xl text-copper-400 block italic">Кавказа</span>
             </h1>
 
@@ -54,19 +54,19 @@ export function HomePage() {
 
             <!-- Subtitle -->
             <p class="text-stone-400 text-lg lg:text-xl max-w-xl leading-relaxed animate-on-load animate-fade-in-up delay-400">
-              Создаю веб-продукты с перспективой, сформированной там, где облака ниже, чем вершины гор.
+              Откройте регион, где облака ниже, чем вершины гор. Эльбрус, древние башни, водопады и горячие источники.
             </p>
 
             <!-- CTA buttons -->
             <div class="flex flex-wrap gap-4 mt-10 animate-on-load animate-fade-in-up delay-500">
-              <a href="#/portfolio" class="btn-primary">
-                Смотреть работы
+              <a href="#/discover" class="btn-primary">
+                Открыть КБР
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                 </svg>
               </a>
-              <a href="#/discover" class="btn-outline">
-                Открыть КБР
+              <a href="#/contact" class="btn-outline">
+                Связаться
               </a>
             </div>
           </div>
@@ -90,36 +90,36 @@ export function HomePage() {
 
             <!-- Text content -->
             <div class="lg:col-span-6 lg:col-start-1">
-              <span class="section-num">01 — О себе</span>
+              <span class="section-num">01 — О регионе</span>
 
               <h2 class="display-lg text-stone-100 mt-6">
-                Где горы формируют<br/>
-                <span class="text-copper-400 italic">перспективу</span>
+                Где Европа<br/>
+                <span class="text-copper-400 italic">встречает небо</span>
               </h2>
 
               <div class="mt-8 space-y-6 text-stone-400 leading-relaxed">
                 <p>
-                  Кабардино-Балкария — это место, где Европа встречается с небом. Эльбрус, высочайшая вершина континента, находится в часе езды от моего дома. Это формирует определённое отношение к работе.
+                  Кабардино-Балкария — республика на Северном Кавказе, где находится Эльбрус, высочайшая вершина Европы. Это место, где древняя история переплетается с величием природы.
                 </p>
                 <p>
-                  Горы учат терпению. Вниманию к деталям. Уважению к масштабу. Каждый проект — это восхождение: тщательная подготовка, выверенные шаги, и награда на вершине.
+                  Горные ущелья, водопады, ледники, термальные источники и средневековые башни — всё это в радиусе часа езды от столицы региона, Нальчика.
                 </p>
               </div>
 
               <div class="mt-12 flex items-center gap-8">
                 <div>
-                  <span class="display-md text-copper-400">5+</span>
-                  <p class="font-mono text-xs text-stone-600 mt-1 uppercase tracking-wider">лет опыта</p>
+                  <span class="display-md text-copper-400">5 642</span>
+                  <p class="font-mono text-xs text-stone-600 mt-1 uppercase tracking-wider">м — Эльбрус</p>
                 </div>
                 <div class="w-px h-16 bg-stone-800"></div>
                 <div>
-                  <span class="display-md text-copper-400">50+</span>
-                  <p class="font-mono text-xs text-stone-600 mt-1 uppercase tracking-wider">проектов</p>
+                  <span class="display-md text-copper-400">10</span>
+                  <p class="font-mono text-xs text-stone-600 mt-1 uppercase tracking-wider">мест открыть</p>
                 </div>
                 <div class="w-px h-16 bg-stone-800"></div>
                 <div>
                   <span class="display-md text-copper-400">∞</span>
-                  <p class="font-mono text-xs text-stone-600 mt-1 uppercase tracking-wider">вдохновения</p>
+                  <p class="font-mono text-xs text-stone-600 mt-1 uppercase tracking-wider">красоты</p>
                 </div>
               </div>
             </div>
@@ -146,88 +146,13 @@ export function HomePage() {
         </div>
       </section>
 
-      <!-- Services Section -->
-      <section class="py-24 lg:py-40 bg-stone-900/50">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-          <div class="grid lg:grid-cols-12 gap-12">
-            <!-- Header -->
-            <div class="lg:col-span-4">
-              <span class="section-num">02 — Услуги</span>
-              <h2 class="display-lg text-stone-100 mt-6">
-                Что я<br/>
-                <span class="text-copper-400 italic">создаю</span>
-              </h2>
-            </div>
-
-            <!-- Services grid -->
-            <div class="lg:col-span-8 grid md:grid-cols-2 gap-8">
-              <!-- Service 1 -->
-              <div class="group p-8 border border-stone-800 hover:border-copper-500/30 transition-colors duration-500">
-                <div class="flex items-start justify-between mb-6">
-                  <span class="font-mono text-xs text-copper-500">01</span>
-                  <svg class="w-8 h-8 text-stone-600 group-hover:text-copper-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                  </svg>
-                </div>
-                <h3 class="font-display text-xl text-stone-100 mb-3">Веб-сайты</h3>
-                <p class="text-stone-500 text-sm leading-relaxed">
-                  Лендинги, корпоративные сайты, интернет-магазины. Быстрые, адаптивные, запоминающиеся.
-                </p>
-              </div>
-
-              <!-- Service 2 -->
-              <div class="group p-8 border border-stone-800 hover:border-copper-500/30 transition-colors duration-500">
-                <div class="flex items-start justify-between mb-6">
-                  <span class="font-mono text-xs text-copper-500">02</span>
-                  <svg class="w-8 h-8 text-stone-600 group-hover:text-copper-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-                  </svg>
-                </div>
-                <h3 class="font-display text-xl text-stone-100 mb-3">Веб-приложения</h3>
-                <p class="text-stone-500 text-sm leading-relaxed">
-                  Интерактивные приложения с современным стеком. React, Vue, Node.js — под ваши задачи.
-                </p>
-              </div>
-
-              <!-- Service 3 -->
-              <div class="group p-8 border border-stone-800 hover:border-copper-500/30 transition-colors duration-500">
-                <div class="flex items-start justify-between mb-6">
-                  <span class="font-mono text-xs text-copper-500">03</span>
-                  <svg class="w-8 h-8 text-stone-600 group-hover:text-copper-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
-                  </svg>
-                </div>
-                <h3 class="font-display text-xl text-stone-100 mb-3">UI/UX Дизайн</h3>
-                <p class="text-stone-500 text-sm leading-relaxed">
-                  Продуманные интерфейсы. Прототипирование, дизайн-системы, пользовательский опыт.
-                </p>
-              </div>
-
-              <!-- Service 4 -->
-              <div class="group p-8 border border-stone-800 hover:border-copper-500/30 transition-colors duration-500">
-                <div class="flex items-start justify-between mb-6">
-                  <span class="font-mono text-xs text-copper-500">04</span>
-                  <svg class="w-8 h-8 text-stone-600 group-hover:text-copper-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                  </svg>
-                </div>
-                <h3 class="font-display text-xl text-stone-100 mb-3">Оптимизация</h3>
-                <p class="text-stone-500 text-sm leading-relaxed">
-                  Ускорение существующих сайтов. SEO, производительность, аудит кода.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Discover Preview Section -->
       <section class="py-24 lg:py-40 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
           <div class="grid lg:grid-cols-12 gap-12 items-center">
             <!-- Text -->
             <div class="lg:col-span-5">
-              <span class="section-num">03 — Регион</span>
+              <span class="section-num">02 — Места</span>
               <h2 class="display-lg text-stone-100 mt-6">
                 Открой<br/>
                 <span class="text-copper-400 italic">Кабардино-Балкарию</span>
@@ -272,16 +197,16 @@ export function HomePage() {
         <div class="absolute inset-0 topo-pattern opacity-30"></div>
 
         <div class="relative max-w-4xl mx-auto px-6 lg:px-12 text-center">
-          <span class="section-num">04 — Контакт</span>
+          <span class="section-num">03 — Контакт</span>
           <h2 class="display-lg text-stone-100 mt-6">
-            Готовы к<br/>
-            <span class="text-copper-400 italic">восхождению?</span>
+            Хотите узнать<br/>
+            <span class="text-copper-400 italic">больше?</span>
           </h2>
           <p class="mt-6 text-stone-400 max-w-xl mx-auto">
-            Расскажите о вашем проекте. Каждое сообщение читаю лично и отвечаю в течение 24 часов.
+            Есть вопросы о регионе или хотите поделиться своими впечатлениями? Напишите нам.
           </p>
           <a href="#/contact" class="btn-primary mt-10">
-            Начать разговор
+            Связаться
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
             </svg>

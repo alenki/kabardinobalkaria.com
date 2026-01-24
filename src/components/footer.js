@@ -24,7 +24,7 @@ export function Footer() {
               <span class="font-display text-xl text-stone-100">kabardinobalkaria.com</span>
             </div>
             <p class="text-stone-500 max-w-sm leading-relaxed">
-              Веб-разработка с уникальной перспективой из самого сердца Кавказских гор.
+              Откройте для себя красоту Кабардино-Балкарии — региона в самом сердце Кавказских гор.
             </p>
 
             <!-- Coordinates -->
@@ -51,7 +51,6 @@ export function Footer() {
             <h4 class="font-mono text-[0.65rem] text-stone-600 tracking-[0.2em] uppercase mb-6">Навигация</h4>
             <nav class="flex flex-col gap-4">
               <a href="#/" class="text-stone-400 hover:text-copper-400 transition-colors">Главная</a>
-              <a href="#/portfolio" class="text-stone-400 hover:text-copper-400 transition-colors">Работы</a>
               <a href="#/discover" class="text-stone-400 hover:text-copper-400 transition-colors">Открыть КБР</a>
               <a href="#/contact" class="text-stone-400 hover:text-copper-400 transition-colors">Контакты</a>
             </nav>
