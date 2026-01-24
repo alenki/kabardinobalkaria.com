@@ -158,7 +158,7 @@ export default function Footer() {
             href="https://okaraf.ru"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 flex justify-center items-center gap-4 text-cream-600 hover:text-cream-400 transition-colors duration-300 group"
+            className="mt-10 flex justify-center items-center gap-4 text-cream-600 hover:text-cream-400 transition-colors duration-300 group"
           >
             <span className="w-9 h-px bg-gradient-to-r from-transparent to-cream-700 group-hover:to-gold-500/50 transition-colors duration-300" />
             <span className="text-[15px] tracking-[0.3em] uppercase">

@@ -208,7 +208,7 @@ export default function Home() {
                 {/* Secondary image - offset */}
                 <motion.div
                   style={{ y: y2 }}
-                  className="absolute -bottom-12 -right-8 lg:-right-16 w-2/3 z-20"
+                  className="absolute -bottom-12 right-0 lg:-right-16 w-1/2 lg:w-2/3 z-20"
                 >
                   <div className="aspect-[4/3] overflow-hidden rounded-2xl shadow-soft-lg border-4 border-cream-50">
                     <img

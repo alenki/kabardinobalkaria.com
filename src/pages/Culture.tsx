@@ -125,22 +125,27 @@ export default function Culture() {
         description="Кухня Кабардино-Балкарии — это сытные мясные блюда, свежие молочные продукты и гостеприимство, превращающее каждую трапезу в праздник"
         background="white"
       >
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {cuisine.map((dish, index) => (
             <FadeIn key={dish.name} delay={index * 0.1}>
               <div className="group">
-                <div className="relative aspect-square rounded-2xl overflow-hidden mb-4">
+                <div className="relative aspect-square rounded-2xl overflow-hidden mb-6 shadow-soft">
                   <img
                     src={dish.image}
                     alt={dish.name}
-                    className="w-full h-full object-cover transition-all duration-500 ease-out group-hover:scale-105"
+                    className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-earth-900/60 to-transparent" />
-                  <h3 className="absolute bottom-4 left-4 font-serif text-xl text-white">
-                    {dish.name}
-                  </h3>
+                  <div className="absolute inset-0 bg-gradient-to-t from-earth-900/80 via-earth-900/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-5">
+                    <h3 className="font-serif text-2xl text-white tracking-wide">
+                      {dish.name}
+                    </h3>
+                    <div className="w-8 h-px bg-gold-400/60 mt-2" />
+                  </div>
                 </div>
-                <p className="text-earth-600 text-sm">{dish.description}</p>
+                <p className="text-earth-600 leading-relaxed text-[15px] tracking-wide">
+                  {dish.description}
+                </p>
               </div>
             </FadeIn>
           ))}
