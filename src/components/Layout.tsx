@@ -1,15 +1,47 @@
 import { Outlet, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
+import Lenis from 'lenis'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
 export default function Layout() {
   const location = useLocation()
+  const lenisRef = useRef<Lenis | null>(null)
+
+  // Initialize Lenis smooth scrolling
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      touchMultiplier: 2,
+    })
+
+    lenisRef.current = lenis
+
+    function raf(time: number) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
+    return () => {
+      lenis.destroy()
+      lenisRef.current = null
+    }
+  }, [])
 
   // Scroll to top on route change
   useEffect(() => {
-    window.scrollTo(0, 0)
+    if (lenisRef.current) {
+      lenisRef.current.scrollTo(0, { immediate: true })
+    } else {
+      window.scrollTo(0, 0)
+    }
   }, [location.pathname])
 
   return (
