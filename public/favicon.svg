@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8BA888"/>
+      <stop offset="100%" stop-color="#5B8A8A"/>
+    </linearGradient>
+  </defs>
+  <path d="M20 4L4 36h32L20 4z" fill="url(#mountainGradient)"/>
+  <path d="M20 12L10 32h20L20 12z" fill="#A8C5D9" opacity="0.6"/>
+</svg>
