@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-earth-800/50 blur-3xl" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 py-20">
+      <div className="relative max-w-7xl mx-auto px-6 pt-20 pb-15">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-5">
@@ -104,7 +104,7 @@ export default function Footer() {
             <h4 className="text-xs tracking-[0.2em] uppercase text-cream-500 mb-6">Следите за нами</h4>
             <div className="flex items-center gap-3">
               <a
-                href="https://t.me/"
+                href="https://t.me/karafco"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-cream-700 flex items-center justify-center text-cream-400 hover:text-white hover:border-cream-500 hover:bg-cream-800/20 transition-all duration-300"
@@ -115,18 +115,16 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://vk.com/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:okaraf07@gmail.com"
                 className="w-10 h-10 rounded-full border border-cream-700 flex items-center justify-center text-cream-400 hover:text-white hover:border-cream-500 hover:bg-cream-800/20 transition-all duration-300"
-                aria-label="VKontakte"
+                aria-label="Email"
               >
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1.001-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4 8.57 4 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.847 2.455 2.27 4.607 2.862 4.607.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z" />
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </a>
               <a
-                href="https://instagram.com/"
+                href="https://www.instagram.com/okaraf_/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-cream-700 flex items-center justify-center text-cream-400 hover:text-white hover:border-cream-500 hover:bg-cream-800/20 transition-all duration-300"
@@ -144,7 +142,7 @@ export default function Footer() {
         <div className="mt-16 pt-8 border-t border-earth-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-cream-600 text-xs tracking-wide">
-              © 2024 Кабардино-Балкария. Создано с любовью к горам.
+              © 2026 Кабардино-Балкария. Создано с любовью к горам.
             </p>
             <div className="flex items-center gap-6 text-cream-600 text-xs">
               <span>Россия</span>
@@ -154,6 +152,20 @@ export default function Footer() {
               <span>КБР</span>
             </div>
           </div>
+
+          {/* Made by KARAF badge */}
+          <a
+            href="https://okaraf.ru"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 flex justify-center items-center gap-4 text-cream-600 hover:text-cream-400 transition-colors duration-300 group"
+          >
+            <span className="w-9 h-px bg-gradient-to-r from-transparent to-cream-700 group-hover:to-gold-500/50 transition-colors duration-300" />
+            <span className="text-[15px] tracking-[0.3em] uppercase">
+              made by <span className="text-cream-400 group-hover:text-gold-400 transition-colors duration-300 font-medium">KARAF</span>
+            </span>
+            <span className="w-9 h-px bg-gradient-to-l from-transparent to-cream-700 group-hover:to-gold-500/50 transition-colors duration-300" />
+          </a>
         </div>
       </div>
     </footer>
