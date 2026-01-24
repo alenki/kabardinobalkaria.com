@@ -11,8 +11,7 @@ const howToGet = [
     description: 'Ближайший аэропорт — Минеральные Воды (MRV). Оттуда до Нальчика около 100 км по живописной дороге.',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
       </svg>
     ),
     details: ['Рейсы из Москвы, Санкт-Петербурга, других городов', 'Время полёта из Москвы ~2 часа', 'Трансфер или аренда авто в аэропорту'],
@@ -22,7 +21,7 @@ const howToGet = [
     description: 'Железнодорожное сообщение с Нальчиком — столицей республики. Поезда из Москвы идут около 30 часов.',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7h8m-8 5h8m-4 9v-9m-4 9h8l-4-4-4 4z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 4h8l2 6H6l2-6zM6 10h12v6a2 2 0 01-2 2H8a2 2 0 01-2-2v-6zm3 3.5a.5.5 0 100-1 .5.5 0 000 1zm6 0a.5.5 0 100-1 .5.5 0 000 1zM9 18l-2 3m8-3l2 3" />
       </svg>
     ),
     details: ['Поезда из Москвы, Санкт-Петербурга', 'Станция Нальчик', 'Романтичное путешествие через степи и предгорья'],
@@ -32,7 +31,7 @@ const howToGet = [
     description: 'Отличные дороги ведут в республику. Путешествие на машине позволит увидеть красоту юга России.',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
       </svg>
     ),
     details: ['Федеральная трасса М-4 «Дон»', 'Около 1700 км от Москвы', 'Аренда авто доступна на месте'],
