@@ -19,8 +19,8 @@ const footerLinks = {
 export default function Footer() {
   return (
     <footer className="relative bg-earth-900 text-cream-100 overflow-hidden">
-      {/* Decorative top gradient */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-earth-600 to-transparent" />
+      {/* Decorative top gradient with gold accent */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
 
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
@@ -37,7 +37,7 @@ export default function Footer() {
                 whileHover={{ rotate: 5 }}
                 transition={{ duration: 0.3 }}
               >
-                <svg className="w-10 h-10 text-meadow-400" viewBox="0 0 40 40" fill="none">
+                <svg className="w-10 h-10 text-gold-400" viewBox="0 0 40 40" fill="none">
                   <path d="M20 6L6 34h28L20 6z" stroke="currentColor" strokeWidth="1.5" fill="none" />
                   <path d="M20 14L12 30h16L20 14z" stroke="currentColor" strokeWidth="1" opacity="0.5" fill="none" />
                   <circle cx="28" cy="12" r="3" stroke="currentColor" strokeWidth="1" fill="none" opacity="0.6" />
@@ -60,7 +60,7 @@ export default function Footer() {
 
             {/* Newsletter signup teaser */}
             <div className="flex items-center gap-3 text-cream-500 text-sm">
-              <div className="w-8 h-px bg-gradient-to-r from-meadow-500 to-transparent" />
+              <div className="w-8 h-px bg-gradient-to-r from-gold-500 to-transparent" />
               <span className="italic">Приезжайте и убедитесь сами</span>
             </div>
           </div>

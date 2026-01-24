@@ -8,7 +8,7 @@ interface SectionProps {
   description?: string
   children: ReactNode
   className?: string
-  background?: 'cream' | 'white' | 'gradient'
+  background?: 'cream' | 'white' | 'gradient' | 'pattern'
   centered?: boolean
 }
 
@@ -26,11 +26,23 @@ export default function Section({
     cream: 'bg-cream-100',
     white: 'bg-white',
     gradient: 'bg-gradient-to-b from-cream-100 to-white',
+    pattern: 'bg-cream-50',
   }
 
   return (
-    <section id={id} className={`section-padding ${bgClasses[background]} ${className}`}>
-      <div className="max-w-7xl mx-auto">
+    <section id={id} className={`section-padding ${bgClasses[background]} ${className} relative overflow-hidden`}>
+      {/* Atmospheric background layers */}
+      {background === 'pattern' && (
+        <>
+          <div className="absolute inset-0 pattern-caucasian opacity-20" />
+          <div className="absolute inset-0 gradient-radial-gold" />
+        </>
+      )}
+      {background === 'gradient' && (
+        <div className="absolute inset-0 gradient-radial-soft" />
+      )}
+
+      <div className="relative max-w-7xl mx-auto">
         {(title || subtitle || description) && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -40,7 +52,7 @@ export default function Section({
             className={`mb-12 md:mb-16 ${centered ? 'text-center' : ''}`}
           >
             {subtitle && (
-              <p className="text-meadow-500 text-sm tracking-widest uppercase mb-3">
+              <p className="text-gold-600 text-sm tracking-widest uppercase mb-3 font-medium">
                 {subtitle}
               </p>
             )}

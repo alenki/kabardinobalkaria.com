@@ -78,8 +78,8 @@ export default function Card({
         <h3 className="font-serif text-2xl md:text-3xl text-white mb-3 leading-[1.1]">
           <span className="relative inline-block">
             {title}
-            {/* Animated underline */}
-            <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-gradient-to-r from-gold-300/80 to-transparent group-hover:w-full transition-all duration-500 ease-out" />
+            {/* Animated gold underline */}
+            <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-gold-400 to-gold-500/50 group-hover:w-full transition-all duration-500 ease-out" />
           </span>
         </h3>
 
@@ -89,8 +89,8 @@ export default function Card({
           </p>
         )}
 
-        {/* Explore indicator */}
-        <div className="flex items-center gap-3 text-cream-200/60 group-hover:text-cream-100 transition-colors duration-300">
+        {/* Explore indicator with gold accent */}
+        <div className="flex items-center gap-3 text-cream-200/60 group-hover:text-gold-300 transition-colors duration-300">
           <span className="text-xs tracking-[0.2em] uppercase font-medium">Открыть</span>
           <motion.div
             className="flex items-center"
@@ -104,9 +104,9 @@ export default function Card({
         </div>
       </div>
 
-      {/* Decorative corner accents */}
-      <div className="absolute top-4 right-4 w-12 h-12 border-t border-r border-white/0 group-hover:border-white/20 rounded-tr-xl transition-all duration-500" />
-      <div className="absolute bottom-4 left-4 w-8 h-8 border-b border-l border-white/0 group-hover:border-white/10 rounded-bl-lg transition-all duration-500 delay-100" />
+      {/* Decorative corner accents with gold */}
+      <div className="absolute top-4 right-4 w-12 h-12 border-t border-r border-white/0 group-hover:border-gold-400/40 rounded-tr-xl transition-all duration-500" />
+      <div className="absolute bottom-4 left-4 w-8 h-8 border-b border-l border-white/0 group-hover:border-gold-400/20 rounded-bl-lg transition-all duration-500 delay-100" />
     </motion.article>
   )
 

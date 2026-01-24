@@ -84,9 +84,11 @@ export default function Home() {
 
       {/* Poetic Introduction */}
       <section className="relative py-32 md:py-40 overflow-hidden">
-        {/* Decorative background elements */}
+        {/* Layered background atmosphere */}
         <div className="absolute inset-0 gradient-radial-soft" />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cream-300 to-transparent" />
+        <div className="absolute inset-0 gradient-radial-gold" />
+        <div className="absolute inset-0 pattern-caucasian opacity-30" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-300/50 to-transparent" />
 
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <FadeIn>
@@ -112,7 +114,7 @@ export default function Home() {
           </FadeIn>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cream-300 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-300/50 to-transparent" />
       </section>
 
       {/* Nature Stats - Horizontal scroll on mobile */}
@@ -130,12 +132,10 @@ export default function Home() {
         </motion.div>
         {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-earth-900/75" />
-        {/* Background texture */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }} />
-        </div>
+        {/* Caucasian geometric pattern */}
+        <div className="absolute inset-0 pattern-caucasian opacity-5" />
+        {/* Mountain ridge decorative line */}
+        <div className="absolute inset-x-0 bottom-0 h-20 pattern-mountains opacity-30" />
 
         <div className="relative max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
@@ -144,7 +144,7 @@ export default function Home() {
                 <div className="text-center">
                   <div className="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-2">
                     {stat.value}
-                    <span className="text-cream-400 text-2xl md:text-3xl ml-1">{stat.unit}</span>
+                    <span className="text-gold-400 text-2xl md:text-3xl ml-1">{stat.unit}</span>
                   </div>
                   <div className="text-cream-300/70 text-sm tracking-wide">
                     {stat.label}

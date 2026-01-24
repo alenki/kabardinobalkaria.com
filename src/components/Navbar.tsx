@@ -34,6 +34,11 @@ export default function Navbar() {
           ? 'py-4'
           : 'py-6'
       }`}
+      style={{
+        animation: 'navReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        animationDelay: '0.3s',
+        opacity: 0,
+      }}
     >
       {/* Background blur effect when scrolled */}
       <motion.div

@@ -42,7 +42,7 @@ export default function Hero({
       ref={containerRef}
       className={`relative ${heightClasses[height]} flex items-center justify-center overflow-hidden`}
     >
-      {/* Parallax Background Image */}
+      {/* Parallax Background Image with orchestrated reveal */}
       <motion.div
         className="absolute inset-0"
         style={{ y: imageY, scale: imageScale }}
@@ -51,6 +51,9 @@ export default function Hero({
           src={image}
           alt=""
           className="w-full h-[120%] object-cover"
+          style={{
+            animation: 'heroImageReveal 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+          }}
         />
       </motion.div>
 
@@ -138,75 +141,97 @@ export default function Hero({
         ))}
       </div>
 
-      {/* Content */}
+      {/* Content - Orchestrated staggered entrance */}
       <motion.div
         className="relative z-10 max-w-5xl mx-auto px-6 text-center"
         style={{ opacity: contentOpacity, y: contentY }}
       >
         {subtitle && (
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+          <p
             className="text-cream-200/90 text-xs md:text-sm tracking-[0.3em] uppercase mb-6 font-light"
+            style={{
+              animation: 'slideInFromBottom 1s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              animationDelay: '0.6s',
+              opacity: 0,
+            }}
           >
             {subtitle}
-          </motion.p>
+          </p>
         )}
 
-        <motion.h1
-          initial={{ opacity: 0, y: 50, filter: 'blur(10px)' }}
-          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-          transition={{ duration: 1.2, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+        <h1
           className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-8 leading-[0.9] tracking-tight"
-          style={{ textShadow: '0 4px 30px rgba(0,0,0,0.2)' }}
+          style={{
+            textShadow: '0 4px 30px rgba(0,0,0,0.2)',
+            animation: 'slideInFromBottom 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            animationDelay: '0.8s',
+            opacity: 0,
+          }}
         >
           {title}
-        </motion.h1>
+        </h1>
 
         {description && (
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          <p
             className="text-lg md:text-xl text-cream-100/80 max-w-2xl mx-auto leading-relaxed font-light"
+            style={{
+              animation: 'slideInFromBottom 1s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              animationDelay: '1.1s',
+              opacity: 0,
+            }}
           >
             {description}
-          </motion.p>
+          </p>
         )}
 
         {children && (
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1, ease: [0.16, 1, 0.3, 1] }}
+          <div
             className="mt-12"
+            style={{
+              animation: 'slideInFromBottom 1s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              animationDelay: '1.4s',
+              opacity: 0,
+            }}
           >
             {children}
-          </motion.div>
+          </div>
         )}
       </motion.div>
 
       {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1 }}
+      <div
         className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
+        style={{
+          animation: 'fadeIn 1s ease-out forwards',
+          animationDelay: '2s',
+          opacity: 0,
+        }}
       >
         <span className="text-cream-200/60 text-xs tracking-[0.2em] uppercase">Листайте</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-          className="w-px h-12 bg-gradient-to-b from-cream-200/60 to-transparent"
+          className="w-px h-12 bg-gradient-to-b from-gold-400/60 to-transparent"
         />
-      </motion.div>
+      </div>
 
-      {/* Decorative corner elements */}
-      <div className="absolute top-8 left-8 w-24 h-24 border-l border-t border-cream-200/20" />
-      <div className="absolute top-8 right-8 w-24 h-24 border-r border-t border-cream-200/20" />
-      <div className="absolute bottom-8 left-8 w-24 h-24 border-l border-b border-cream-200/20" />
-      <div className="absolute bottom-8 right-8 w-24 h-24 border-r border-b border-cream-200/20" />
+      {/* Decorative corner elements - gold accent */}
+      <div
+        className="absolute top-8 left-8 w-24 h-24 border-l border-t border-gold-400/20"
+        style={{ animation: 'fadeIn 0.8s ease-out forwards', animationDelay: '1.8s', opacity: 0 }}
+      />
+      <div
+        className="absolute top-8 right-8 w-24 h-24 border-r border-t border-gold-400/20"
+        style={{ animation: 'fadeIn 0.8s ease-out forwards', animationDelay: '1.9s', opacity: 0 }}
+      />
+      <div
+        className="absolute bottom-8 left-8 w-24 h-24 border-l border-b border-gold-400/20"
+        style={{ animation: 'fadeIn 0.8s ease-out forwards', animationDelay: '2s', opacity: 0 }}
+      />
+      <div
+        className="absolute bottom-8 right-8 w-24 h-24 border-r border-b border-gold-400/20"
+        style={{ animation: 'fadeIn 0.8s ease-out forwards', animationDelay: '2.1s', opacity: 0 }}
+      />
     </section>
   )
 }
