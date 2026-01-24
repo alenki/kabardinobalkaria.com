@@ -1,3 +1,5 @@
+import { useRef } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import Hero from '../components/Hero'
 import Section from '../components/Section'
 import FadeIn from '../components/FadeIn'
@@ -74,6 +76,15 @@ const arts = [
 ]
 
 export default function Culture() {
+  const quoteRef = useRef<HTMLDivElement>(null)
+
+  const { scrollYProgress: quoteScrollProgress } = useScroll({
+    target: quoteRef,
+    offset: ['start end', 'end start'],
+  })
+
+  const quoteY = useTransform(quoteScrollProgress, [0, 1], ['-25%', '25%'])
+
   return (
     <>
       <Hero
@@ -171,15 +182,19 @@ export default function Culture() {
       </Section>
 
       {/* Quote */}
-      <section className="relative py-24 md:py-32">
-        <div className="absolute inset-0">
+      <section ref={quoteRef} className="relative py-24 md:py-32 overflow-hidden">
+        {/* Parallax background image */}
+        <motion.div
+          className="absolute inset-0 -top-[30%] -bottom-[30%]"
+          style={{ y: quoteY }}
+        >
           <img
             src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1920&q=80"
             alt=""
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-earth-900/70" />
-        </div>
+        </motion.div>
+        <div className="absolute inset-0 bg-earth-900/70" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <FadeIn>

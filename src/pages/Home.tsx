@@ -39,13 +39,28 @@ const natureStats = [
 
 export default function Home() {
   const parallaxRef = useRef<HTMLDivElement>(null)
+  const statsRef = useRef<HTMLDivElement>(null)
+  const ctaRef = useRef<HTMLDivElement>(null)
+
   const { scrollYProgress } = useScroll({
     target: parallaxRef,
     offset: ['start end', 'end start'],
   })
 
+  const { scrollYProgress: statsScrollProgress } = useScroll({
+    target: statsRef,
+    offset: ['start end', 'end start'],
+  })
+
+  const { scrollYProgress: ctaScrollProgress } = useScroll({
+    target: ctaRef,
+    offset: ['start end', 'end start'],
+  })
+
   const y1 = useTransform(scrollYProgress, [0, 1], [0, -100])
   const y2 = useTransform(scrollYProgress, [0, 1], [0, -50])
+  const statsY = useTransform(statsScrollProgress, [0, 1], ['-27.5%', '27.5%'])
+  const ctaY = useTransform(ctaScrollProgress, [0, 1], ['-12.5%', '12.5%'])
 
   return (
     <>
@@ -101,7 +116,20 @@ export default function Home() {
       </section>
 
       {/* Nature Stats - Horizontal scroll on mobile */}
-      <section className="relative py-20 bg-earth-800 overflow-hidden">
+      <section ref={statsRef} className="relative py-20 overflow-hidden">
+        {/* Parallax background image */}
+        <motion.div
+          className="absolute inset-0 -top-[30%] -bottom-[30%]"
+          style={{ y: statsY }}
+        >
+          <img
+            src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1920&q=80"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </motion.div>
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-earth-900/75" />
         {/* Background texture */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
@@ -229,18 +257,21 @@ export default function Home() {
       </section>
 
       {/* Call to Action - Immersive */}
-      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-        {/* Background Image with parallax */}
-        <div className="absolute inset-0">
+      <section ref={ctaRef} className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+        {/* Parallax background image */}
+        <motion.div
+          className="absolute inset-0 -top-[15%] -bottom-[15%]"
+          style={{ y: ctaY }}
+        >
           <img
             src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80"
             alt=""
             className="w-full h-full object-cover"
           />
-          {/* Gradient overlays */}
-          <div className="absolute inset-0 bg-gradient-to-t from-earth-900/90 via-earth-900/50 to-earth-900/30" />
-          <div className="absolute inset-0 bg-gradient-to-r from-earth-900/60 to-transparent" />
-        </div>
+        </motion.div>
+        {/* Gradient overlays */}
+        <div className="absolute inset-0 bg-gradient-to-t from-earth-900/90 via-earth-900/50 to-earth-900/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-earth-900/60 to-transparent" />
 
         {/* Floating elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">

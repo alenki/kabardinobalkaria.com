@@ -1,4 +1,6 @@
+import { useRef } from 'react'
 import { Link } from 'react-router-dom'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import Hero from '../components/Hero'
 import Section from '../components/Section'
 import FadeIn from '../components/FadeIn'
@@ -103,6 +105,15 @@ const tips = [
 ]
 
 export default function Visit() {
+  const ctaRef = useRef<HTMLDivElement>(null)
+
+  const { scrollYProgress: ctaScrollProgress } = useScroll({
+    target: ctaRef,
+    offset: ['start end', 'end start'],
+  })
+
+  const ctaY = useTransform(ctaScrollProgress, [0, 1], ['-25%', '25%'])
+
   return (
     <>
       <Hero
@@ -248,15 +259,19 @@ export default function Visit() {
       </Section>
 
       {/* CTA */}
-      <section className="relative py-24 md:py-32">
-        <div className="absolute inset-0">
+      <section ref={ctaRef} className="relative py-24 md:py-32 overflow-hidden">
+        {/* Parallax background image */}
+        <motion.div
+          className="absolute inset-0 -top-[30%] -bottom-[30%]"
+          style={{ y: ctaY }}
+        >
           <img
             src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1920&q=80"
             alt=""
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-earth-900/80 to-earth-900/60" />
-        </div>
+        </motion.div>
+        <div className="absolute inset-0 bg-gradient-to-r from-earth-900/80 to-earth-900/60" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <FadeIn>
