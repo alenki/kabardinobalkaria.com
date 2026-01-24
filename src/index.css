@@ -97,6 +97,7 @@
   /* Typography - Crimson Pro (elegant book serif) + Manrope (modern geometric with Cyrillic) */
   --font-serif: "Crimson Pro", Georgia, "Times New Roman", serif;
   --font-sans: "Manrope", system-ui, sans-serif;
+  --font-display: "Poiret One", sans-serif;
 
   /* Shadows - Soft, misty */
   --shadow-soft: 0 4px 30px -4px rgba(41, 54, 40, 0.08);

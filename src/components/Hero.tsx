@@ -160,8 +160,9 @@ export default function Hero({
         )}
 
         <h1
-          className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-8 leading-[0.9] tracking-tight"
+          className="text-5xl md:text-7xl lg:text-8xl text-white mb-8 leading-[0.9] tracking-tight"
           style={{
+            fontFamily: 'var(--font-display)',
             textShadow: '0 4px 30px rgba(0,0,0,0.2)',
             animation: 'slideInFromBottom 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards',
             animationDelay: '0.8s',
