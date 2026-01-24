@@ -196,7 +196,7 @@ export default function Home() {
                   style={{ y: y1 }}
                   className="relative z-10"
                 >
-                  <div className="image-dreamy aspect-[4/5] overflow-hidden rounded-3xl shadow-dreamy">
+                  <div className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-dreamy">
                     <img
                       src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800&q=80"
                       alt="Традиции Кабардино-Балкарии"

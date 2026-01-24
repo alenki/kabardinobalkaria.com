@@ -275,7 +275,7 @@ export default function Visit() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <FadeIn>
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-6 text-white">
               Горы ждут вас
             </h2>
             <p className="text-cream-200 text-lg mb-8 max-w-2xl mx-auto">

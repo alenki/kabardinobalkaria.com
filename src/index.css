@@ -182,6 +182,15 @@
   ::selection {
     @apply bg-meadow-200 text-earth-900;
   }
+
+  img {
+    opacity: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  img[loading] {
+    opacity: 0;
+  }
 }
 
 @layer components {
@@ -487,12 +496,3 @@
   outline-offset: 2px;
 }
 
-/* Smooth image loading */
-img {
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-
-img[loading] {
-  opacity: 0;
-}

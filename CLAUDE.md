@@ -8,11 +8,12 @@ A beautiful, atmospheric website about Kabardino-Balkaria with a soft, dreamy st
 
 ## Tech Stack
 
-- **React** + **TypeScript**
+- **React 19** + **TypeScript**
 - **Vite** - Build tool
-- **Tailwind CSS v4** - Styling with custom theme
+- **Tailwind CSS v4** - Styling with custom theme (defined in `src/index.css` using `@theme`)
 - **Framer Motion** - Animations
-- **React Router** - Client-side routing
+- **React Router v7** - Client-side routing
+- **Lenis** - Smooth scrolling
 
 ## Commands
 
@@ -22,72 +23,55 @@ npm run build    # Build for production
 npm run preview  # Preview production build
 ```
 
-## Project Structure
+## Architecture
 
-```
-src/
-├── components/     # Reusable UI components
-│   ├── Layout.tsx  # Main layout with Navbar and Footer
-│   ├── Navbar.tsx  # Navigation
-│   ├── Footer.tsx  # Footer
-│   ├── Hero.tsx    # Hero sections
-│   ├── Card.tsx    # Card component
-│   ├── Section.tsx # Section wrapper
-│   └── FadeIn.tsx  # Animation wrapper
-├── pages/          # Page components
-│   ├── Home.tsx    # / - Main page
-│   ├── Nature.tsx  # /priroda - Nature page
-│   ├── Places.tsx  # /mesta - Places page
-│   ├── Culture.tsx # /kultura - Culture page
-│   └── Visit.tsx   # /posetit - Visit info page
-├── App.tsx         # Routes configuration
-├── main.tsx        # Entry point
-└── index.css       # Global styles and Tailwind
-```
+- `src/App.tsx` - Routes configuration using React Router nested routes
+- `src/components/Layout.tsx` - Main layout wrapper with Navbar, Footer, and Lenis smooth scrolling
+- `src/pages/` - Page components (Home, Nature, Places, Culture, Visit)
+- `src/components/` - Reusable UI components (Hero, Card, Section, FadeIn)
+- `src/index.css` - Global styles, Tailwind theme, custom animations, and utility classes
 
 ## Design System
 
-### Aesthetic Direction: "Mountain Reverie"
-A dreamy, ethereal design inspired by:
-- Morning mist rising over valleys
-- Soft watercolor-like transitions
-- The quietude of ancient mountains
-- Warm golden light filtering through clouds
+### Aesthetic: "Mountain Reverie"
+Dreamy, ethereal design inspired by morning mist, soft watercolors, and warm golden light.
 
-### Color Palette
+### Color Palette (Custom Tailwind Colors)
 
-Custom Tailwind theme with soft, watercolor-inspired colors:
 - `meadow` - Muted greens (alpine meadows)
 - `sky` - Soft blues (sky, water)
-- `cream` - Warm cream (sunlight, stone)
+- `cream` - Warm cream (sunlight, stone) - **primary background**
 - `gold` - Soft gold (sunset, warmth)
 - `mist` - Cool grays (mountain mist)
 - `lavender` - Purple accents (flowers)
 - `teal` - Deep teal (Blue Lakes)
-- `earth` - Warm browns (earth, wood)
+- `earth` - Warm browns (earth, wood) - **primary text**
 
 ### Typography
 
-- **Serif**: Cormorant Garamond (elegant display font for headings)
-- **Sans**: Outfit (modern, soft sans-serif for body)
+- **Serif**: `font-serif` → Cormorant Garamond (headings)
+- **Sans**: `font-sans` → Outfit (body text)
 
-### Key Visual Elements
+### Key CSS Classes (defined in index.css)
 
-- **Noise overlay**: Subtle film-like grain texture
-- **Glass morphism**: Frosted glass effects on cards
-- **Parallax**: Scroll-triggered depth effects
-- **Floating elements**: Animated mist clouds
-- **Decorative corners**: Subtle frame elements
-- **Gradient overlays**: Multi-layer atmospheric effects
+```css
+.noise-overlay     /* Film-like grain texture overlay */
+.card-glass        /* Frosted glass morphism effect */
+.card-ethereal     /* Subtle glass card with hover lift */
+.btn-primary       /* Dark button with shimmer effect */
+.btn-secondary     /* Light glass button */
+.btn-ghost         /* Text button with underline on hover */
+.section-padding   /* Consistent section spacing */
+.text-gradient     /* Green-teal-blue gradient text */
+.divider-mist      /* Gradient horizontal divider */
+.image-dreamy      /* Image container with zoom on hover */
+```
 
-### Animation Principles
+### Animation Easing
 
-- Slow, flowing animations (like water, mist)
-- Custom easing: `[0.16, 1, 0.3, 1]` (smooth, natural feel)
-- Scroll-triggered reveals with blur effects
-- Parallax on images for depth
+Custom easing for smooth, natural animations: `[0.16, 1, 0.3, 1]`
 
 ## Language
 
-- Website content: Russian
-- Code/comments: English
+- **Website content**: Russian
+- **Code/comments**: English

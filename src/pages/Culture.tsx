@@ -133,7 +133,7 @@ export default function Culture() {
                   <img
                     src={dish.image}
                     alt={dish.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-all duration-500 ease-out group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-earth-900/60 to-transparent" />
                   <h3 className="absolute bottom-4 left-4 font-serif text-xl text-white">
