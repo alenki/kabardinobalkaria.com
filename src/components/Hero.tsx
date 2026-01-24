@@ -216,21 +216,21 @@ export default function Hero({
         />
       </div>
 
-      {/* Decorative corner elements - gold accent */}
+      {/* Decorative corner elements - gold accent, hidden below 1600px */}
       <div
-        className="absolute top-8 left-8 w-24 h-24 border-l border-t border-gold-400/20"
+        className="hidden min-[1600px]:block absolute top-8 left-8 w-24 h-24 border-l border-t border-gold-400/20"
         style={{ animation: 'fadeIn 0.8s ease-out forwards', animationDelay: '1.8s', opacity: 0 }}
       />
       <div
-        className="absolute top-8 right-8 w-24 h-24 border-r border-t border-gold-400/20"
+        className="hidden min-[1600px]:block absolute top-8 right-8 w-24 h-24 border-r border-t border-gold-400/20"
         style={{ animation: 'fadeIn 0.8s ease-out forwards', animationDelay: '1.9s', opacity: 0 }}
       />
       <div
-        className="absolute bottom-8 left-8 w-24 h-24 border-l border-b border-gold-400/20"
+        className="hidden min-[1600px]:block absolute bottom-8 left-8 w-24 h-24 border-l border-b border-gold-400/20"
         style={{ animation: 'fadeIn 0.8s ease-out forwards', animationDelay: '2s', opacity: 0 }}
       />
       <div
-        className="absolute bottom-8 right-8 w-24 h-24 border-r border-b border-gold-400/20"
+        className="hidden min-[1600px]:block absolute bottom-8 right-8 w-24 h-24 border-r border-b border-gold-400/20"
         style={{ animation: 'fadeIn 0.8s ease-out forwards', animationDelay: '2.1s', opacity: 0 }}
       />
     </section>

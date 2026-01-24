@@ -153,20 +153,17 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className={`relative z-10 lg:hidden p-3 rounded-full transition-all duration-300 ${
-            isScrolled
-              ? 'text-earth-700 hover:bg-cream-200/50'
-              : 'text-white hover:bg-white/10'
-          }`}
+          className="relative z-10 lg:hidden p-2 cursor-pointer"
           aria-label="Toggle menu"
         >
-          <div className="w-6 h-6 flex flex-col justify-center items-center gap-1.5">
+          <div className="w-7 h-6 relative">
             <motion.span
               animate={{
                 rotate: isMobileMenuOpen ? 45 : 0,
-                y: isMobileMenuOpen ? 4 : 0,
+                y: isMobileMenuOpen ? 0 : -8,
               }}
-              className={`block w-5 h-[1.5px] rounded-full transition-colors ${
+              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-6 h-[1.5px] origin-center ${
                 isScrolled ? 'bg-earth-700' : 'bg-white'
               }`}
             />
@@ -175,16 +172,18 @@ export default function Navbar() {
                 opacity: isMobileMenuOpen ? 0 : 1,
                 scaleX: isMobileMenuOpen ? 0 : 1,
               }}
-              className={`block w-5 h-[1.5px] rounded-full transition-colors ${
+              transition={{ duration: 0.2 }}
+              className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-6 h-[1.5px] origin-center ${
                 isScrolled ? 'bg-earth-700' : 'bg-white'
               }`}
             />
             <motion.span
               animate={{
                 rotate: isMobileMenuOpen ? -45 : 0,
-                y: isMobileMenuOpen ? -4 : 0,
+                y: isMobileMenuOpen ? 0 : 8,
               }}
-              className={`block w-5 h-[1.5px] rounded-full transition-colors ${
+              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 block w-6 h-[1.5px] origin-center ${
                 isScrolled ? 'bg-earth-700' : 'bg-white'
               }`}
             />

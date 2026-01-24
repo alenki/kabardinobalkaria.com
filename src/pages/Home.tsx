@@ -318,11 +318,11 @@ export default function Home() {
           </FadeIn>
         </div>
 
-        {/* Decorative corners */}
-        <div className="absolute top-8 left-8 w-20 h-20 border-l border-t border-cream-200/10" />
-        <div className="absolute top-8 right-8 w-20 h-20 border-r border-t border-cream-200/10" />
-        <div className="absolute bottom-8 left-8 w-20 h-20 border-l border-b border-cream-200/10" />
-        <div className="absolute bottom-8 right-8 w-20 h-20 border-r border-b border-cream-200/10" />
+        {/* Decorative corners - hidden below 1600px */}
+        <div className="hidden min-[1600px]:block absolute top-8 left-8 w-20 h-20 border-l border-t border-cream-200/10" />
+        <div className="hidden min-[1600px]:block absolute top-8 right-8 w-20 h-20 border-r border-t border-cream-200/10" />
+        <div className="hidden min-[1600px]:block absolute bottom-8 left-8 w-20 h-20 border-l border-b border-cream-200/10" />
+        <div className="hidden min-[1600px]:block absolute bottom-8 right-8 w-20 h-20 border-r border-b border-cream-200/10" />
       </section>
     </>
   )
